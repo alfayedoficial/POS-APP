@@ -6,6 +6,7 @@
 * [Functionality](#functionality)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [PLayStore](#pLayStore)
 * [License](#license)
 
 ## General info
@@ -57,3 +58,15 @@ This POS system provides you a great replacement for a cash register and track s
 - Paging         3.1.1 (https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
 - Zxing          4.3.0 (https://github.com/journeyapps/zxing-android-embedded)
 - CodeScanner    2.1.2 (https://github.com/yuriy-budiyev/code-scanner)
+
+## Setup
+
+#### System requirements
+- Android Studio Dolphin | 2021.3.1 Patch 1
+- Minimum sdk v21
+- Target sdk v32
+- Compile sdk v32
+
+## PlayStore
+https://play.google.com/store/apps/details?id=com.silkysys.pos
+
