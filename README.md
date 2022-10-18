@@ -7,6 +7,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [PLayStore](#pLayStore)
+* [YoutubeLink](#youtubelink)
 * [License](#license)
 
 ## General info
@@ -69,4 +70,7 @@ This POS system provides you a great replacement for a cash register and track s
 
 ## PlayStore
 https://play.google.com/store/apps/details?id=com.silkysys.pos
+
+## YoutubeLink
+https://youtu.be/pytSVlyvR64
 
