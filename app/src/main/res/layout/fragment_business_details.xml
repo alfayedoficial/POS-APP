@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.business.BusinessDetailsFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_logo_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_background"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/cd_business_logo"
+            android:src="@drawable/ic_upload_logo"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Upload your logo -->
+        <TextView
+            android:id="@+id/tv_your_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/your_logo"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_color"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+        <!--  Progress bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/secondary_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Update button -->
+    <Button
+        android:id="@+id/btn_update"
+        style="@style/SecondaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:padding="12dp"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--  Progress bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/secondary_color"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_update"
+        app:layout_constraintEnd_toEndOf="@id/btn_update"
+        app:layout_constraintStart_toStartOf="@id/btn_update"
+        app:layout_constraintTop_toTopOf="@+id/btn_update" />
+
+
+    <!--  Business name label  -->
+    <TextView
+        android:id="@+id/business_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/business_name_capt"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_logo_section" />
+
+
+    <!--  Business name   -->
+    <EditText
+        android:id="@+id/et_business_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="name"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/layout_border_edittext"
+        android:hint="@string/silkysys_company"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/business_label"
+        tools:ignore="UnusedAttribute" />
+
+
+    <!--  Tax number label  -->
+    <TextView
+        android:id="@+id/tax_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/tax_number"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_business_name" />
+
+
+    <!--  Tax number  -->
+    <EditText
+        android:id="@+id/et_tax_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="name"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/layout_border_edittext"
+        android:hint="026565463454"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tax_number_label"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

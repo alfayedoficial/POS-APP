@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:fillViewport="true"
+    tools:context=".ui.auth.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/iv_logo_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="154dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_logo"
+            tools:ignore="ContentDescription" />
+
+
+        <!-- Silky label -->
+        <TextView
+            android:id="@+id/tv_silky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/silky"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo_user" />
+
+
+        <!-- User id -->
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints="Username"
+            android:background="@drawable/layer_rounded_view"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_person"
+            android:hint="@string/user_name_hint"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome_silky" />
+
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints="Password"
+            android:background="@drawable/layer_rounded_view"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_user_name" />
+
+
+        <!-- Welcome to Silkysys label -->
+        <TextView
+            android:id="@+id/tv_welcome_silky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/welcome_to_silkysys"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_silky" />
+
+        <!-- Remember me -->
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/remember_me"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:translationX="-5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+
+        <!-- Login -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/secondary_color"
+            android:text="@string/login"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+
+        <!--  Progress bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+
+        <TextView
+            android:id="@+id/tv_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:padding="16dp"
+            android:text="@string/new_create_an_account"
+            android:textColor="@color/secondary_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/secondary_color"
+            app:layout_constraintEnd_toEndOf="@+id/et_password"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

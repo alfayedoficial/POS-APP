@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+
+
+        <item
+            android:id="@+id/getContactsFragment"
+            android:icon="@drawable/customer"
+            android:title="@string/customers" />
+
+
+        <item
+            android:id="@+id/productsFragment"
+            android:icon="@drawable/ic_add_product"
+            android:title="@string/product" />
+
+        <item
+            android:id="@+id/refundFragment"
+            android:icon="@drawable/ic_returned"
+            android:title="@string/returned" />
+
+    </group>
+
+</menu>

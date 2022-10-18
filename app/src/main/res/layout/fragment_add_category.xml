@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.category.AddCategoryFragment">
+
+    <!-- Category name label -->
+    <TextView
+        android:id="@+id/category_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/category_name"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Category name -->
+    <EditText
+        android:id="@+id/et_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="product"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/layout_border_edittext"
+        android:hint="@string/meat"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_name_label"
+        tools:ignore="UnusedAttribute" />
+
+
+    <!-- Category id label -->
+    <TextView
+        android:id="@+id/category_id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/id_sub_category"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_category_name" />
+
+
+    <!-- Optional label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/optional"
+        android:textColor="@color/primary_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/category_id_label"
+        app:layout_constraintStart_toEndOf="@id/category_id_label"
+        app:layout_constraintTop_toTopOf="@id/category_id_label" />
+
+
+    <!-- Sub Category id -->
+    <EditText
+        android:id="@+id/et_sub__category_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="product"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/layout_border_edittext"
+        android:hint="0"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_id_label"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+    <!-- Category description label -->
+    <TextView
+        android:id="@+id/category_des_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/description"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_sub__category_id" />
+
+    <!-- Optional label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/optional"
+        android:textColor="@color/primary_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/category_des_label"
+        app:layout_constraintStart_toEndOf="@id/category_des_label"
+        app:layout_constraintTop_toTopOf="@id/category_des_label" />
+
+
+    <!-- Category description  -->
+    <EditText
+        android:id="@+id/et_category_des"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="price"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/layout_border_edittext"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_des_label"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+    <!-- Cancel -->
+    <Button
+        android:id="@+id/btn_cancel"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_add"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Add button -->
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/SecondaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancel" />
+
+    <!--  Progress bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/secondary_color"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add"
+        app:layout_constraintEnd_toEndOf="@id/btn_add"
+        app:layout_constraintStart_toStartOf="@id/btn_add"
+        app:layout_constraintTop_toTopOf="@+id/btn_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>

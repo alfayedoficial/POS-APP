@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/drawable-xhdpi/splash_image.xml" value="0.2255" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/drawable/ic_outline_lock.xml" value="0.2255" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/drawable/ic_person_outline.xml" value="0.225" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/drawable/rounded_button.xml" value="0.2255" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/layout-sw600dp/activity_login.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.27" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/layout/activity_home.xml" value="0.2864471996579735" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/layout/activity_main.xml" value="0.2828197551709582" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/POS/app/src/main/res/layout/activity_welcome.xml" value="0.2860196665241556" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable-v23/layer_selected_item.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2015" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable-xhdpi/splash_image.xml" value="0.1575" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/badge_background.xml" value="0.257" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/border_textview.xml" value="0.1575" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/btn_cancel.xml" value="0.2115" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/circle_button.xml" value="0.2095" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/custom_blue_textview.xml" value="0.1575" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/custom_cancel_button.xml" value="0.144" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/custom_quantity.xml" value="0.159" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/custom_red_textview.xml" value="0.159" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/drawer_selected_item.xml" value="0.2135" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_add_product.xml" value="0.2095" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_add_shopping_cart.xml" value="0.167" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_arrow_drop_down.xml" value="0.1" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_arrow_upward.xml" value="0.209" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_arrow_forward.xml" value="0.2155" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_arrow_upward.xml" value="0.233" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_date_range.xml" value="0.1695" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_delete.xml" value="0.207" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_edit.xml" value="0.27" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2205" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_lock.xml" value="0.1575" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_menu.xml" value="0.2155" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_person.xml" value="0.1575" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_returned.xml" value="0.2075" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_search.xml" value="0.1545" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_baseline_shopping_cart.xml" value="0.2585" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_delete_forever.xml" value="0.127" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_discount.xml" value="0.164" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_done.xml" value="0.2345" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_edit.xml" value="0.142" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_email.xml" value="0.307" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_error_outline.xml" value="0.2275" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_home.xml" value="0.27" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.27" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.277" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_login_background.xml" value="0.2585" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_login_cover.xml" value="0.2585" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_logo.xml" value="0.2655" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_logo_blue.xml" value="0.209" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_navigate_red.xml" value="0.252" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_navigate_to.xml" value="0.206" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_outline_image.xml" value="0.126" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_outline_lock.xml" value="0.2585" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_outline_shopping_cart.xml" value="0.167" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_person_outline.xml" value="0.224" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_plus_blue_dark.xml" value="0.209" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_plus_large.xml" value="0.264" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_plus_white.xml" value="0.266" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_product.xml" value="0.2095" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_returned.xml" value="0.2175" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_scan_barcode.xml" value="0.239" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_scan_barcode_black.xml" value="0.1675" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_search.xml" value="0.171" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_shopping_cart.xml" value="0.167" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/ic_upload_logo.xml" value="0.2595" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_border_blue.xml" value="0.2145" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_item_selected.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_rounded_view.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_search_view.xml" value="0.1755" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_selected_item.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_spinner_cart.xml" value="0.2715" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_spinner_contact.xml" value="0.2265" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_spinner_style.xml" value="0.2715" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_textview_blue.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_textview_border.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_textview_red.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layer_view_rounded.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layout_border_edittext.xml" value="0.1925" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/layout_spinner_contact.xml" value="0.131" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/loading_image.xml" value="0.2145" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/progress_animation.xml" value="0.2145" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/rounded_button.xml" value="0.101" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/rounded_qty_button.xml" value="0.101" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/rounded_search.xml" value="0.233" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/rounded_view.xml" value="0.233" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/search_view_rounded.xml" value="0.1" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/style_spinner.xml" value="0.156" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/tv_blue.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/tv_border.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/tv_red.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/drawable/view_rounded.xml" value="0.2465" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw320dp/fragment_create_contact.xml" value="0.26171875" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw600dp/activity_login.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw600dp/fragment_cart.xml" value="0.646484375" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw600dp/fragment_refund.xml" value="0.5171875" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw600dp/layout_cart.xml" value="0.44625" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw600dp/list_item_cart.xml" value="0.6533203125" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw600dp/list_item_returned.xml" value="0.48625" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw720dp/activity_login.xml" value="0.26171875" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw720dp/fragment_cart.xml" value="0.25859375" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw720dp/fragment_refund.xml" value="0.25859375" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw720dp/fragment_user_details.xml" value="0.26171875" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw720dp/layout_cart.xml" value="0.25859375" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw720dp/list_item_cart.xml" value="0.5" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout-sw720dp/list_item_returned.xml" value="0.25859375" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/activity_forgot_password.xml" value="0.2214046822742475" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/activity_home.xml" value="0.2860196665241556" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/activity_login.xml" value="0.2214046822742475" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/activity_profile.xml" value="0.2828197551709582" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/activity_welcome.xml" value="0.2214046822742475" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/bool.xml" value="0.22039473684210525" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/dialog_disount.xml" value="0.21776315789473685" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/dialog_error.xml" value="0.1" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/dialog_logout.xml" value="0.21710526315789475" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/dialog_payment.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/dialog_returned.xml" value="0.22039473684210525" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_add_category.xml" value="0.22039473684210525" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_add_product.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_blank.xml" value="0.2864471996579735" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_business_details.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_cart.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_choose_contact.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_contact.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_contacts.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_create_contact.xml" value="0.22408026755852842" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_forgot.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_get_contacts.xml" value="0.22039473684210525" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_home.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_invoice.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_login.xml" value="0.2864471996579735" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_order_confirmed.xml" value="0.21776315789473685" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_products.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_profile.xml" value="0.2864471996579735" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_refund.xml" value="0.21563517915309446" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_scan_invoice_number.xml" value="0.22635135135135134" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_scanner.xml" value="0.22039473684210525" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_update_contact.xml" value="0.22039473684210525" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_user.xml" value="0.21776315789473685" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/fragment_user_details.xml" value="0.21563517915309446" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_cart.xml" value="0.21776315789473685" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_cart_counter.xml" value="0.33" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_dialog_disount.xml" value="0.21563517915309446" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_dialog_payment.xml" value="0.21776315789473685" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_home.xml" value="0.21563517915309446" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_home_categories.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_invoice.xml" value="0.5171875" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_nav_header.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_spinner.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_spinner_cart.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/layout_toolbar.xml" value="0.2" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/list_item_cart.xml" value="0.22408026755852842" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/list_item_category.xml" value="0.21776315789473685" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/list_item_choose_contact.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/list_item_contact.xml" value="0.22006578947368421" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/list_item_home.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/list_item_invoice.xml" value="0.22364864864864864" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/list_item_returned.xml" value="0.25" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/layout/nav_header.xml" value="0.2860196665241556" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/menu/add_contact_menu.xml" value="0.22635135135135134" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/menu/cart_counter.xml" value="0.2829059829059829" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/menu/cart_menu.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/menu/contact_menu.xml" value="0.22039473684210525" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/menu/drawer_menu.xml" value="0.2182410423452769" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/menu/nav_header.xml" value="0.2828197551709582" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2225" />
+        <entry key="..\:/Users/Ahmed/AndroidStudioProjects/pos-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2225" />
+        <entry key="..\:/Users/Saiko-Store/AndroidStudioProjects/SilkySystems-pos-android/app/src/main/res/layout/fragment_business_details.xml" value="0.25" />
+        <entry key="..\:/Users/Saiko-Store/AndroidStudioProjects/SilkySystems-pos-android/app/src/main/res/layout/layout_cart_counter.xml" value="0.8800000000000001" />
+        <entry key="..\:/Users/Saiko-Store/AndroidStudioProjects/SilkySystems-pos-android/app/src/main/res/menu/cart_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.refund.RefundFragment">
+
+    <!-- Invoice num label -->
+    <TextView
+        android:id="@+id/invoice_num_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/invoice_no"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Invoice num -->
+    <TextView
+        android:id="@+id/tv_invoice_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/secondary_returned"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/invoice_num_label"
+        app:layout_constraintTop_toTopOf="@+id/invoice_num_label"
+        tools:text="6106560659" />
+
+    <!-- Customer label -->
+    <TextView
+        android:id="@+id/customer_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/customer"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/invoice_num_label" />
+
+    <!-- Customer -->
+    <TextView
+        android:id="@+id/tv_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/secondary_returned"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/customer_label"
+        app:layout_constraintTop_toTopOf="@+id/customer_label"
+        tools:text="Walk in Customer" />
+
+    <!-- Date label -->
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/date_space"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customer_label" />
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/secondary_returned"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/date_label"
+        app:layout_constraintTop_toTopOf="@+id/date_label"
+        tools:text="21/03/2022" />
+
+    <!-- Business Location label -->
+    <TextView
+        android:id="@+id/business_location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/business_location"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_label" />
+
+    <!-- Business Location -->
+    <TextView
+        android:id="@+id/tv_business_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/secondary_returned"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/business_location_label"
+        app:layout_constraintTop_toTopOf="@id/business_location_label"
+        tools:text="AlHamra" />
+
+    <!-- Today date -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_today_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/cart_item_background"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/business_location_label">
+
+        <TextView
+            android:id="@+id/tv_today_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_date_range"
+            tools:text="06/04/2022  3:00 pm" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Cancel -->
+    <Button
+        android:id="@+id/btn_cancel"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_returned"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Returned button -->
+    <Button
+        android:id="@+id/btn_returned"
+        style="@style/SecondaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/returned"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+        app:layout_constraintTop_toTopOf="@id/btn_cancel" />
+
+    <!--  Progress bar bottom -->
+    <ProgressBar
+        android:id="@+id/progress_bar_bottom"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_returned"
+        app:layout_constraintEnd_toEndOf="@id/btn_returned"
+        app:layout_constraintStart_toStartOf="@id/btn_returned"
+        app:layout_constraintTop_toTopOf="@id/btn_returned" />
+
+
+    <!--  Progress bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/primary_color"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_today_date"
+        tools:visibility="visible">
+
+
+        <!-- Product name label -->
+        <TextView
+            android:id="@+id/product_name_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/product_name_label"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <!-- Unit price label -->
+        <TextView
+            android:id="@+id/unit_price_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/unit_price_label"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/product_name_label"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.20" />
+
+        <!-- Sell qty label -->
+        <TextView
+            android:id="@+id/sell_qty_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/sell_qty"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/unit_price_label"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.12" />
+
+
+        <!-- Return qty label -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/returned"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sell_qty_label"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.23" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Returned recycler view   -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_returned"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/btn_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:itemCount="30"
+        tools:listitem="@layout/list_item_returned" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

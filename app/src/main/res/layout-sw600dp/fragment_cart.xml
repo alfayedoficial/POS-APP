@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cart.CartFragment">
+
+    <!--  Group to control visibility  -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="rv_cart,cl_checkout,product_label,quantity_label,unit_price_label,total_label" />
+
+
+    <!-- Spinner invoice -->
+    <Spinner
+        android:id="@+id/spinner_invoice_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/layer_spinner_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_select_customer"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <!-- Select a customer -->
+    <TextView
+        android:id="@+id/tv_select_customer"
+        style="@style/TextViewCart"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:text="@string/walk_in_customer"
+        app:drawableEndCompat="@drawable/ic_plus_blue_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group" />
+
+    <!-- Product name -->
+    <TextView
+        android:id="@+id/product_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/product_name_full"
+        android:textColor="@color/header"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select_customer"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <!-- Quantity -->
+    <TextView
+        android:id="@+id/quantity_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:gravity="center"
+        android:text="@string/quantity"
+        android:textColor="@color/header"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/product_label"
+        app:layout_constraintTop_toTopOf="@+id/product_label"
+        app:layout_constraintWidth_percent="0.17" />
+
+    <!-- Unit price -->
+    <TextView
+        android:id="@+id/unit_price_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:text="@string/unit_price"
+        android:textColor="@color/header"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/quantity_label"
+        app:layout_constraintTop_toTopOf="@+id/quantity_label"
+        app:layout_constraintWidth_percent="0.16" />
+
+    <!-- Total -->
+    <TextView
+        android:id="@+id/total_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/total"
+        android:textColor="@color/header"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/unit_price_label"
+        app:layout_constraintTop_toTopOf="@+id/unit_price_label"
+        app:layout_constraintWidth_percent="0.14" />
+
+
+    <!-- Recycler view cart   -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="32dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/cl_checkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_label"
+        tools:itemCount="6"
+        tools:listitem="@layout/list_item_cart" />
+
+    <!--  Progress bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_cart" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <!-- Checkout button -->
+        <Button
+            android:id="@+id/btn_checkout"
+            style="@style/SecondaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/checkout"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total_label_bottom" />
+
+
+        <!-- Total label   -->
+        <TextView
+            android:id="@+id/total_label_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/total"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vat_label" />
+
+        <!-- Final total -->
+        <TextView
+            android:id="@+id/tv_final_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:maxLength="7"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/currency_total"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vat"
+            tools:text="000.00" />
+
+
+        <!-- SAR currency -->
+
+
+        <!-- Add discount -->
+        <TextView
+            android:id="@+id/currency_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/currency_sar"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_final_total" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_discount"
+            style="@style/QuantityButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/primary_color"
+            app:icon="@drawable/btn_plus"
+            app:iconSize="15dp"
+            app:iconTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Subtotal -->
+        <TextView
+            android:id="@+id/tv_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:maxLength="7"
+            android:textColor="@color/header"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/currency"
+            app:layout_constraintTop_toTopOf="@+id/subtotal_label"
+            tools:text="000.00" />
+
+
+        <!-- SAR currency -->
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/currency_sar"
+            android:textColor="@color/header"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_subtotal" />
+
+        <TextView
+            android:id="@+id/currency2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/currency_sar"
+            android:textColor="@color/header"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_discount" />
+
+        <!-- Vat -->
+        <TextView
+            android:id="@+id/tv_vat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="00.00"
+            android:textColor="@color/header"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/currency_discount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_discount"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/currency_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/currency_sar"
+            android:textColor="@color/header"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_vat" />
+
+
+        <!-- Discount -->
+        <TextView
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/_0_00"
+            android:textColor="@color/header"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/currency2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_subtotal" />
+
+        <!-- Vat label -->
+        <TextView
+            android:id="@+id/vat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/vat"
+            android:textColor="@color/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discount_label" />
+
+        <!-- Subtotal label -->
+        <TextView
+            android:id="@+id/subtotal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/subtotal"
+            android:textColor="@color/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_discount_label" />
+
+        <!-- Discount label -->
+        <TextView
+            android:id="@+id/discount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/discount"
+            android:textColor="@color/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtotal_label" />
+
+        <!-- Add discount label -->
+        <TextView
+            android:id="@+id/add_discount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/discount"
+            android:textColor="@color/primary_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_add_discount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_add_discount" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_cart_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/cart_empty"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_cart_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cart_is_empty"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cart_empty" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

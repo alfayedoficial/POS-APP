@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    tools:context=".ui.order.InvoiceFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp">
+
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.08"
+            tools:ignore="ContentDescription" />
+
+
+        <!-- Company name  -->
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+            tools:text="El Rabeeh Company" />
+
+
+        <!-- Address  -->
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company_name"
+            tools:text="Ar-Riyad,13217,Saudi Arabia" />
+
+
+        <!--  Invoice_description  -->
+        <TextView
+            android:id="@+id/tv_invoice_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layer_textview_border"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/simplified_tax_invoice"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+
+        <!--  Barcode  -->
+        <ImageView
+            android:id="@+id/iv_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/cd_barcode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_invoice_description" />
+
+
+        <!-- Line  -->
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_barcode" />
+
+
+        <!-- Label bill number -->
+        <TextView
+            android:id="@+id/tv_bill_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/bill_number"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+        <!-- Bill number   -->
+        <TextView
+            android:id="@+id/tv_bill_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            tools:text="16474995831850188" />
+
+
+        <!-- Label date -->
+        <TextView
+            android:id="@+id/tv_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_bill_number_label" />
+
+
+        <!-- Date  -->
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_bill_number"
+            tools:text="2022-03-17 09:46:23" />
+
+
+        <!-- Label Sales agent -->
+        <TextView
+            android:id="@+id/tv_sales_agent_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/sales_agent"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_date_label" />
+
+
+        <!-- Sales agent  -->
+        <TextView
+            android:id="@+id/tv_sales_agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/mr_admin"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_date" />
+
+
+        <!-- Label Client -->
+        <TextView
+            android:id="@+id/tv_client_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/client"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sales_agent_label" />
+
+
+        <!-- Reservation  -->
+        <TextView
+            android:id="@+id/tv_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sales_agent"
+            tools:text="Mr Ahmed Ali" />
+
+
+        <!-- Line  -->
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_client_label" />
+
+
+        <!--  Product header  -->
+        <TextView
+            android:id="@+id/tv_product_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/product"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tv_num"
+            app:layout_constraintTop_toBottomOf="@+id/view_2"
+            app:layout_constraintWidth_percent="0.30" />
+
+
+        <!--  Total price header  -->
+        <TextView
+            android:id="@+id/tv_total_price_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/total_price"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_2"
+            app:layout_constraintWidth_percent="0.2" />
+
+
+        <!--  Unit price header  -->
+        <TextView
+            android:id="@+id/tv_unit_price_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/unit_price"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tv_total_price_header"
+            app:layout_constraintTop_toBottomOf="@+id/view_2"
+            app:layout_constraintWidth_percent="0.2" />
+
+
+        <!--  Quantity header  -->
+        <TextView
+            android:id="@+id/tv_qty_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/qty"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tv_unit_price_header"
+            app:layout_constraintTop_toBottomOf="@+id/view_2"
+            app:layout_constraintWidth_percent="0.15" />
+
+
+        <!-- Line  -->
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_product_header" />
+
+
+        <!--  Order recycler view   -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_3"
+            tools:itemCount="6"
+            tools:listitem="@layout/list_item_invoice" />
+
+
+        <!-- Label subtotal -->
+        <TextView
+            android:id="@+id/tv_subtotal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/subtotal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_invoice" />
+
+
+        <!-- Subtotal -->
+        <TextView
+            android:id="@+id/tv_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_invoice"
+            tools:text="120 SR" />
+
+
+        <!-- Label discount -->
+        <TextView
+            android:id="@+id/tv_discount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/discount"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtotal_label" />
+
+
+        <!-- Discount -->
+        <TextView
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtotal"
+            tools:text="30 SR" />
+
+
+        <!-- Label cash -->
+        <TextView
+            android:id="@+id/tv_cash_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/cash"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_discount_label" />
+
+
+        <!-- Cash -->
+        <TextView
+            android:id="@+id/tv_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:maxLength="9"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_discount"
+            tools:text="90 SR" />
+
+
+        <!-- Label total payable -->
+        <TextView
+            android:id="@+id/tv_total_payable_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/total_payable"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cash_label" />
+
+
+        <!-- Line  -->
+        <View
+            android:id="@+id/view_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_total_payable_label" />
+
+
+        <!-- Total payable -->
+        <TextView
+            android:id="@+id/tv_total_payable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:maxLength="9"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cash"
+            tools:text="90 SR" />
+
+
+        <!--  Qr code -->
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/cd_qr_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_4"
+            tools:layout_height="100dp"
+            tools:layout_width="100dp"
+            tools:src="@drawable/preview_qr_code" />
+
+
+        <!--  Powered by -->
+        <TextView
+            android:id="@+id/tv_powered_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/powered_by"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_bill_number_bottom" />
+
+
+        <!-- Confirm button   -->
+        <Button
+            android:id="@+id/btn_confirm"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btn_print"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_powered_by" />
+
+
+        <!-- Print button -->
+        <Button
+            android:id="@+id/btn_print"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/secondary_color"
+            android:text="@string/print"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_confirm"
+            app:layout_constraintTop_toTopOf="@+id/btn_confirm" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="#"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_2"
+            tools:ignore="HardcodedText" />
+
+
+        <!-- Bill number   -->
+        <TextView
+            android:id="@+id/tv_bill_number_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_qr_code"
+            tools:text="16474995831850188" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+

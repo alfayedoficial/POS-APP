@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+
+    <!-- Discount label -->
+    <TextView
+        android:id="@+id/discount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/discount"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_View"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discount_label">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
+
+            <!-- Discount icon -->
+            <ImageView
+                android:id="@+id/discount_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/et_discount_amount"
+                app:layout_constraintEnd_toStartOf="@+id/et_discount_amount"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_edit"
+                tools:ignore="ContentDescription" />
+
+            <!-- SR currency -->
+            <TextView
+                android:id="@+id/sr_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/sr"
+                android:textColor="@color/header"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/et_discount_amount"
+                app:layout_constraintStart_toEndOf="@+id/et_discount_amount"
+                app:layout_constraintTop_toTopOf="@+id/et_discount_amount" />
+
+            <!-- Discount amount -->
+            <EditText
+                android:id="@+id/et_discount_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="0.00"
+                android:maxLength="5"
+                android:ems="3"
+                android:hint="@string/_00_00"
+                android:textColorHint="@color/primary_color"
+                android:inputType="numberDecimal"
+                android:textColor="@color/primary_color"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Base price label -->
+    <TextView
+        android:id="@+id/base_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/base_price"
+        android:textColor="@color/header"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_View" />
+
+    <!-- Base price -->
+    <TextView
+        android:id="@+id/tv_base_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/header"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/sar_base_price"
+        app:layout_constraintTop_toTopOf="@+id/base_price_label"
+        tools:text="00.00" />
+
+    <!-- SR currency -->
+    <TextView
+        android:id="@+id/sar_base_price"
+        style="@style/sr_currency"
+        android:textColor="@color/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/base_price_label" />
+
+    <!-- label discount -->
+    <TextView
+        android:id="@+id/discount_sub_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/discount"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_discount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_discount" />
+
+    <!-- Discount -->
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/_00_00"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/sr_discount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_base_price" />
+
+    <!-- SR currency -->
+    <TextView
+        android:id="@+id/sr_discount"
+        style="@style/sr_currency"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_discount" />
+
+    <!-- Total label   -->
+    <TextView
+        android:id="@+id/total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/total"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_total" />
+
+    <!-- Total -->
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/_00_00"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/sar_total_price"
+        app:layout_constraintTop_toBottomOf="@id/tv_discount" />
+
+    <!-- SR currency -->
+    <TextView
+        android:id="@+id/sar_total_price"
+        style="@style/sr_currency"
+        android:textColor="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/total_label" />
+
+    <!-- Cancel -->
+    <Button
+        android:id="@+id/btn_cancel"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_ok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_label" />
+
+    <!-- Ok button -->
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/SecondaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="32dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="8dp">
+
+
+        <TextView
+            android:id="@+id/tv_total_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/primary_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_payment_type"
+            tools:text="100.00" />
+
+        <TextView
+            android:id="@+id/tv_SR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/sr"
+            android:textColor="@color/primary_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_above"
+            app:layout_constraintTop_toTopOf="@+id/tv_total_above" />
+
+        <RadioGroup
+            android:id="@+id/rg_payment_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RadioButton
+                android:id="@+id/rb_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:paddingEnd="24dp"
+                android:text="@string/cash"
+                android:textSize="16sp" />
+
+
+            <RadioButton
+                android:id="@+id/rb_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="24dp"
+                android:text="@string/card"
+                android:textSize="16sp" />
+
+
+            <RadioButton
+                android:id="@+id/rb_split"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/split"
+                android:textSize="16sp" />
+
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Cash caption -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cash"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_cash_caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cv_cash_caption"
+        app:layout_constraintWidth_percent="0.2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+
+            <TextView
+                android:id="@+id/cash_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:textColor="@color/description_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cash_caption"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_cash"
+        app:layout_constraintTop_toBottomOf="@+id/container">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@android:color/transparent"
+                android:ems="5"
+                android:gravity="center"
+                android:hint="00.00"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:textColorHint="@color/primary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card label -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_card_caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cv_card_caption"
+        app:layout_constraintWidth_percent="0.2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+
+            <TextView
+                android:id="@+id/card_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/card"
+                android:textColor="@color/description_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card caption -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card_caption"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cv_received_caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_card"
+        app:layout_constraintTop_toBottomOf="@+id/cv_cash_caption">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                android:textColor="@color/primary_color"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Received label -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_received"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_received_caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cv_received_caption"
+        app:layout_constraintWidth_percent="0.2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+
+            <TextView
+                android:id="@+id/received_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/received"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Received caption -->
+    <!-- Received caption -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_received_caption"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_received"
+        app:layout_constraintTop_toBottomOf="@+id/cv_card_caption">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_received"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@android:color/transparent"
+                android:ems="5"
+                android:gravity="center"
+                android:hint="00.00"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:textColorHint="@color/primary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Total label -->
+    <TextView
+        android:id="@+id/total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/total"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_received" />
+
+
+    <!-- Remaining label -->
+    <TextView
+        android:id="@+id/remaining_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/remaining"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_label" />
+
+
+    <!-- Total -->
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tv_sar_total"
+        app:layout_constraintTop_toTopOf="@+id/total_label"
+        tools:text="100.00" />
+
+
+    <!-- Currency sar -->
+    <TextView
+        android:id="@+id/tv_sar_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/currency_sar"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/total_label" />
+
+
+    <!-- Remaining -->
+    <TextView
+        android:id="@+id/tv_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="00.00"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/remaining_label"
+        app:layout_constraintEnd_toStartOf="@id/tv_sar_remaining"
+        app:layout_constraintTop_toTopOf="@+id/remaining_label"
+        tools:ignore="HardcodedText" />
+
+
+    <!-- Currency sar -->
+    <TextView
+        android:id="@+id/tv_sar_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/currency_sar"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_remaining" />
+
+    <!-- Cancel button   -->
+    <Button
+        android:id="@+id/btn_cancel"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_ok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remaining_label" />
+
+
+    <!-- Ok button -->
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/secondary_color"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancel" />
+
+    <!--  Progress bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/secondary_color"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_ok"
+        app:layout_constraintEnd_toEndOf="@id/btn_ok"
+        app:layout_constraintStart_toStartOf="@id/btn_ok"
+        app:layout_constraintTop_toTopOf="@+id/btn_ok" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

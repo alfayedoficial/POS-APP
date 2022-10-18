@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.contact.UpdateContactFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tv_supplier_label,et_supplier_name,tv_tax_number_label,et_tax_number" />
+
+        <!-- Type contact label -->
+        <TextView
+            android:id="@+id/tv_contact_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/type_contact"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Spinner contact -->
+        <Spinner
+            android:id="@+id/spinner_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layer_spinner_contact"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_contact_label" />
+
+        <!-- Supplier label -->
+        <TextView
+            android:id="@+id/tv_supplier_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/supplier_business_name"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_contact" />
+
+
+        <!--  Supplier name  -->
+        <EditText
+            android:id="@+id/et_supplier_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints="supplier name"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/layout_border_edittext"
+            android:hint="@string/supplier_name"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_supplier_label"
+            tools:ignore="UnusedAttribute" />
+
+        <!-- First name label  -->
+        <TextView
+            android:id="@+id/tv_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/first_name"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_supplier_name" />
+
+        <!-- Phone number label -->
+        <TextView
+            android:id="@+id/tv_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_first_name" />
+
+        <!--  First name  -->
+        <EditText
+            android:id="@+id/et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints="name"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/layout_border_edittext"
+            android:hint="@string/your_name"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_label"
+            tools:ignore="UnusedAttribute" />
+
+        <!-- Phone number -->
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints="phone"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/layout_border_edittext"
+            android:hint="53690666"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_county_code"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone_label"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <!-- Country code -->
+        <TextView
+            android:id="@+id/tv_county_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/layout_border_edittext"
+            android:padding="8dp"
+            android:text="+966"
+            android:textColor="@color/primary_color"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_phone_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_phone_number"
+            tools:ignore="HardcodedText" />
+
+        <!-- Address label -->
+        <TextView
+            android:id="@+id/tv_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/address"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_phone_number" />
+
+        <!--  Address  -->
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints="name"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/layout_border_edittext"
+            android:hint="@string/king_abdullah_st_riyadh"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_address_label"
+            tools:ignore="UnusedAttribute" />
+
+        <!-- Optional label -->
+        <TextView
+            android:id="@+id/tv_optional_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/optional"
+            android:textColor="@color/primary_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_address_label"
+            app:layout_constraintStart_toEndOf="@+id/tv_address_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_address_label" />
+
+
+        <!-- Email label -->
+        <TextView
+            android:id="@+id/tv_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/email"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_address" />
+
+        <!-- Optional label -->
+        <TextView
+            android:id="@+id/tv_optional_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/optional"
+            android:textColor="@color/primary_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_email_label"
+            app:layout_constraintStart_toEndOf="@+id/tv_email_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_email_label" />
+
+        <!--  Email  -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:digits="@string/english_only"
+            android:autofillHints="name"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/layout_border_edittext"
+            android:hint="name@gmail.com"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_email_label"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+        <!-- Tax number label -->
+        <TextView
+            android:id="@+id/tv_tax_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tax_number"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+
+        <!--  Tax number  -->
+        <EditText
+            android:id="@+id/et_tax_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints="tax number"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/layout_border_edittext"
+            android:hint="123456789900034"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_tax_number_label"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+        <!-- Update button -->
+        <Button
+            android:id="@+id/btn_update"
+            style="@style/SecondaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_cancel" />
+
+        <!--  Progress bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/secondary_color"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_update"
+            app:layout_constraintEnd_toEndOf="@id/btn_update"
+            app:layout_constraintStart_toStartOf="@id/btn_update"
+            app:layout_constraintTop_toTopOf="@+id/btn_update" />
+
+        <!-- Cancel button -->
+        <Button
+            android:id="@+id/btn_cancel"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_color"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_update"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

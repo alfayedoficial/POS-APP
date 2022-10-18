@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.scanner.ScannerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:autoFocusButtonColor="@android:color/white"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="@android:color/white"
+            app:flashButtonVisible="true"
+            app:frameAspectRatioHeight="1"
+            app:frameAspectRatioWidth="1"
+            app:frameColor="@android:color/white"
+            app:frameCornersRadius="0dp"
+            app:frameCornersSize="50dp"
+            app:frameSize="0.75"
+            app:frameThickness="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maskColor="#77000000" />
+
+        <!--  Sku number  -->
+        <TextView
+            android:id="@+id/tv_sku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_label_sku"
+            app:layout_constraintTop_toBottomOf="@+id/scanner_view"
+            tools:text="4545454544" />
+
+        <!--  Progress bar scanner -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:indeterminateTint="@color/primary_color"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sku" />
+
+        <!--  Label sku number  -->
+        <TextView
+            android:id="@+id/tv_label_sku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/sku_number"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scanner_view" />
+
+        <!-- Product title -->
+        <TextView
+            android:id="@+id/tv_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/primary_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sku"
+            tools:text="Meat 250g" />
+
+        <!--  Label enter sku number  -->
+        <TextView
+            android:id="@+id/label_enter_sku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/or_enter_sku_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+
+        <!-- Manual sku number -->
+        <EditText
+            android:id="@+id/et_manual_sku"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="sku"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/layout_border_edittext"
+            android:hint="054974881430"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_enter_sku"
+            app:layout_constraintWidth_percent="0.5"
+            tools:ignore="HardcodedText,UnusedAttribute"
+            />
+
+        <!-- Add button -->
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/primary_color"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/et_manual_sku"
+            app:layout_constraintStart_toEndOf="@+id/et_manual_sku"
+            app:layout_constraintTop_toTopOf="@+id/et_manual_sku" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/primary_color"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_add"
+            app:layout_constraintEnd_toEndOf="@id/btn_add"
+            app:layout_constraintStart_toStartOf="@id/btn_add"
+            app:layout_constraintTop_toTopOf="@id/btn_add" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

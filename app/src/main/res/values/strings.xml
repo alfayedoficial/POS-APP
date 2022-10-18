@@ -1,0 +1,253 @@
+<resources>
+    <string name="app_name">POS</string>
+
+    <!--  Content description  -->
+    <string name="cd_business_logo">Business logo</string>
+    <string name="cd_product_image">Product image</string>
+    <string name="cd_qr_code">qr code</string>
+    <string name="cd_delete_item">Delete item</string>
+
+    <!--  Api response errors  -->
+    <string name="invalid_auth">The given data was invalid.</string>
+    <string name="not_found">Sorry, something went wrong</string>
+    <string name="connection_error">Please check your internet connection</string>
+
+    <!--  Welcome screen -->
+    <string name="silky">Silky Systems</string>
+    <string name="systems">Systems</string>
+    <string name="welcome_to_silkysys">Welcome to Silkysys</string>
+    <string name="login">Login</string>
+    <string name="user_name_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="required_field">Required field</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="new_create_an_account">New? Create an account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="session_expired">Session expired</string>
+
+
+    <!--  Home screen  -->
+    <string name="profile">Profile</string>
+    <string name="customers">Customers</string>
+    <string name="bills">Bills</string>
+    <string name="cart">Cart</string>
+    <string name="notifications">Notifications</string>
+    <string name="messages">Messages</string>
+    <string name="your_business">Your Business</string>
+    <string name="home">Home</string>
+    <string name="currency_sar">SAR</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="in_stock">In stock</string>
+    <string name="item_added">Item was added</string>
+    <string name="item_updated">Item updated</string>
+    <string name="invalid_qty">Invalid quantity</string>
+    <string name="failed">Failed</string>
+
+    <!--  Profile screen  -->
+    <string name="user_information">User information</string>
+    <string name="logout">Logout</string>
+    <string name="logout_space">Log out</string>
+    <string name="logout_title_dialog">Log out ?</string>
+    <string name="logout_confirm">Are you sure you want to log out?</string>
+
+    <!--  Profile details screen  -->
+    <string name="upload_your_logo">Update your Logo</string>
+    <string name="business_name">Business name</string>
+    <string name="update">Update</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="email">Email</string>
+    <string name="_1">1</string>
+
+    <!-- Cart screen -->
+    <string name="sku_scan_barcode">SKU / Scan barcode</string>
+    <string name="product_name">Product</string>
+    <string name="product_name_full">Product name</string>
+    <string name="quantity">Quantity</string>
+    <string name="unit_price">Unit price</string>
+    <string name="total">Total</string>
+    <string name="del">Del</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_payment">Select payment</string>
+    <string name="vat">VAT</string>
+    <string name="discount">Discount</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="sr">SR</string>
+    <string name="_00_00">00.00</string>
+    <string name="_0_00">0.00</string>
+    <string name="base_price">Base Price</string>
+    <string name="_00_00_sr">00.00 SR</string>
+    <string name="done">Done</string>
+    <string name="cart_is_empty">Cart is empty</string>
+    <string name="invoice_status">final</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="received">Received</string>
+    <string name="remaining">Remaining</string>
+    <string name="ok">OK</string>
+    <string name="split">Split</string>
+    <string name="pay">Pay</string>
+    <string name="clear">Clear</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="required_payment">Select payment method</string>
+    <string name="alert_discount">Discount is very high</string>
+    <string name="stock_empty">Stock is empty</string>
+    <string name="customer_order">Customer order</string>
+    <string name="checkout">Checkout</string>
+    <string name="walk_in_customer">Walk In Customer</string>
+
+
+    <!-- Order confirmed screen  -->
+    <string name="payment_complete">Payment Complete</string>
+    <string name="go_to_home">Go to home</string>
+    <string name="payment_successful">Thank You, Your Payment has been successful</string>
+    <string name="no_products_available">No products available ..</string>
+
+
+    <!--  Arrays  -->
+    <string-array name="invoice_printing_type">
+        <item>Invoice printing type</item>
+        <item>Final</item>
+        <item>Draft</item>
+        <item>Quotation</item>
+    </string-array>
+
+    <string-array name="contact_type">
+        <item>customer</item>
+        <item>supplier</item>
+    </string-array>
+
+
+    <!-- Invoice screen  -->
+    <string name="simplified_tax_invoice">Simplified tax invoice</string>
+    <string name="bill_number">Bill number</string>
+    <string name="date">Date</string>
+    <string name="sales_agent">Sales agent</string>
+    <string name="client">Client</string>
+    <string name="product_ar">Product (Arabic)</string>
+    <string name="total_price">Total price</string>
+    <string name="qty">Qty</string>
+    <string name="total_payable">Total payable</string>
+    <string name="powered_by" translatable="false">Powered By:www.SILKYSYS.com</string>
+    <string name="mr_admin">Mr Admin</string>
+    <string name="confirm">Confirm</string>
+    <string name="print">Print</string>
+
+
+    <!-- Add contact screen -->
+    <string name="type_contact">Contact Type</string>
+    <string name="first_name">First Name</string>
+    <string name="your_name">Mr /Miss</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="king_abdullah_st_riyadh">King Abdullah St , Riyadh</string>
+    <string name="optional">(optional)</string>
+    <string name="tax_number">Tax number</string>
+    <string name="supplier_business_name">Supplier Business name</string>
+    <string name="supplier_name">Supplier name</string>
+    <string name="create">Create</string>
+    <string name="cd_scroll_top">Scroll to the top</string>
+
+    <string name="try_again">Try Again</string>
+    <string name="something_went_wrong">Something Went Wrong</string>
+    <string name="main_screen">Home</string>
+    <string name="user">User</string>
+    <string name="order_confirmed">Order confirmed</string>
+    <string name="invoice">Invoice</string>
+    <string name="failed_add_to_cart">Failed to add to cart</string>
+
+
+    <!--  Get contact screen  -->
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="item_deleted">Deleted successfully</string>
+
+    <!--  Returned screen  -->
+    <string name="returned">Returned</string>
+    <string name="invoice_no">Invoice no :</string>
+    <string name="customer">Customer :</string>
+    <string name="date_space">Date :</string>
+    <string name="business_location">Business Location :</string>
+    <string name="product_name_label">Product name</string>
+    <string name="unit_price_label">Unit Price</string>
+    <string name="enter_invoice_no">Enter invoice no</string>
+    <string name="sell_qty">Sell Qty</string>
+
+    <!--  Contacts screen  -->
+    <string name="edit_contact">Edit</string>
+    <string name="contacts">Contacts</string>
+    <string name="mobile_number_search">mobile number…</string>
+
+    <!--  Scanner screen  -->
+    <string name="scanner">Scanner</string>
+    <string name="or_enter_sku_number">Or Enter sku number</string>
+    <string name="sku_number">SKU number</string>
+    <string name="product_not_found">Product not found</string>
+
+    <string name="add_contact">Add a contact</string>
+
+    <!--  Add a product screen  -->
+    <string name="product_name_label_cap">Product Name</string>
+    <string name="product_name_label_ar">Product Name (Arabic)</string>
+    <string name="category_label">Category</string>
+    <string name="sku">SKU</string>
+    <string name="cd_scan_barcode">scan bar code</string>
+    <string name="price">Price</string>
+    <string name="tax_label">Tax</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="product">Product</string>
+    <string name="unit">Unit</string>
+    <string name="purchase_price_exc_tax">Purchase Price Exc tax</string>
+    <string name="purchase_price_inc_tax">Purchase Price Inc tax</string>
+    <string name="selling_price_inc_tax">Selling Price Inc tax</string>
+    <string name="add_product">Add a product</string>
+    <string name="has_been_created">" Has been created</string>
+    <string name="location">Location</string>
+
+
+    <!-- Add a category screen   -->
+    <string name="category_name">Category Name</string>
+    <string name="meat">Meat</string>
+    <string name="id_category">ID Category</string>
+    <string name="add_category">Add a category</string>
+    <string name="type">Type</string>
+    <string name="id_sub_category">ID Sub category</string>
+    <string name="contact_name">Ahmed</string>
+    <string name="english_only" translatable="false">abcdefghijklmnopqrstuvwxyz.@ ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="arabic_only" translatable="false">َضصثقفغعهخحجدطكم نتالبيسشئءؤرلاىةوزظلأ</string>
+    <string name="one_item">Select at least 1 item</string>
+    <string name="back">Back</string>
+    <string name="cd_barcode" translatable="false">bar code</string>
+
+
+    <!--  Business information   -->
+    <string name="business_information">Business Information</string>
+    <string name="business_name_capt">Business Name</string>
+    <string name="silkysys_company">Silkysys Company</string>
+    <string name="last_name">Last Name</string>
+    <string name="zaki">Zaki</string>
+    <string name="your_logo">Your logo</string>
+
+
+    <string name="scan_invoice">Scan Invoice</string>
+
+    <!--  Choose a contact  -->
+    <string name="choose_contact">Choose a contact</string>
+    <string name="submit">Submit</string>
+
+    <!--  Forgot password screen  -->
+    <string name="reset_password">Reset Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="send_reset_instructions">We\'ll send you reset instructions</string>
+    <string name="forgot_password_confrim">The password has been reset</string>
+    <string name="scroll_to_top_cd">Scroll to Top</string>
+
+
+</resources>

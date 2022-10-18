@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.silkysys.pos.ui.home.HomeFragment"
+        android:label="@string/main_screen"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_scannerFragment"
+            app:destination="@id/scannerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_getContactsFragment"
+            app:destination="@id/getContactsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_refundFragment"
+            app:destination="@id/refundFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+    </fragment>
+
+
+    <!-- User -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.silkysys.pos.ui.user.UserFragment"
+        android:label="@string/user"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_businessDetailsFragment"
+            app:destination="@id/businessDetailsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_userDetailsFragment"
+            app:destination="@id/userDetailsFragment" />
+    </fragment>
+
+
+    <!-- Cart -->
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.silkysys.pos.ui.cart.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_invoiceFragment"
+            app:destination="@id/invoiceFragment"
+           />
+        <action
+            android:id="@+id/action_cartFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_scannerFragment"
+            app:destination="@id/scannerFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_chooseContactFragment"
+            app:destination="@id/chooseContactFragment" />
+        <argument
+            android:name="contact"
+            android:defaultValue="@null"
+            app:argType="com.silkysys.pos.data.model.contact.list.DataItem"
+            app:nullable="true" />
+    </fragment>
+
+
+    <!-- Order Confirmed -->
+    <fragment
+        android:id="@+id/orderConfirmedFragment"
+        android:name="com.silkysys.pos.ui.order.OrderConfirmedFragment"
+        android:label="@string/order_confirmed"
+        tools:layout="@layout/fragment_order_confirmed" />
+
+
+    <!--  Invoice  -->
+    <fragment
+        android:id="@+id/invoiceFragment"
+        android:name="com.silkysys.pos.ui.order.InvoiceFragment"
+        android:label="@string/invoice"
+        tools:layout="@layout/fragment_invoice">
+        <action
+            android:id="@+id/action_invoiceFragment_to_orderConfirmedFragment"
+            app:destination="@id/orderConfirmedFragment" />
+        <argument
+            android:name="order"
+            app:argType="com.silkysys.pos.data.model.sell.create.response.SellResponse" />
+    </fragment>
+
+
+    <!-- Add a contact  -->
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.silkysys.pos.ui.contact.CreateContactFragment"
+        android:label="@string/add_contact"
+        tools:layout="@layout/fragment_create_contact">
+        <action
+            android:id="@+id/action_contactFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+
+    <!--  Scanner -->
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.silkysys.pos.ui.scanner.ScannerFragment"
+        android:label="@string/scanner"
+        tools:layout="@layout/fragment_scanner">
+        <action
+            android:id="@+id/action_scannerFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+
+    <!-- Contacts   -->
+    <fragment
+        android:id="@+id/getContactsFragment"
+        android:name="com.silkysys.pos.ui.contact.ContactsFragment"
+        android:label="@string/customers"
+        tools:layout="@layout/fragment_contacts">
+        <action
+            android:id="@+id/action_ContactsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_ContactsFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_ContactsFragment_to_updateContactFragment"
+            app:destination="@id/updateContactFragment" />
+    </fragment>
+
+
+    <!-- Update Contact  -->
+    <fragment
+        android:id="@+id/updateContactFragment"
+        android:name="com.silkysys.pos.ui.contact.UpdateContactFragment"
+        android:label="@string/edit_contact"
+        tools:layout="@layout/fragment_update_contact">
+        <action
+            android:id="@+id/action_updateContactFragment_to_ContactsFragment"
+            app:destination="@id/getContactsFragment" />
+        <argument
+            android:name="contact"
+            app:argType="com.silkysys.pos.data.model.contact.list.DataItem" />
+    </fragment>
+
+
+    <!--  Refund products -->
+    <fragment
+        android:id="@+id/refundFragment"
+        android:name="com.silkysys.pos.ui.refund.RefundFragment"
+        android:label="@string/returned"
+        tools:layout="@layout/fragment_refund">
+        <action
+            android:id="@+id/action_refundFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_refundFragment_to_scanInvoiceNumberFragment"
+            app:destination="@id/scanInvoiceNumberFragment" />
+        <argument
+            android:name="skuNumber"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+
+    <!-- Add a product   -->
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.silkysys.pos.ui.product.AddProductFragment"
+        android:label="@string/add_product"
+        tools:layout="@layout/fragment_add_product">
+        <action
+            android:id="@+id/action_productsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_productsFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+
+
+    <!-- Add a category -->
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.silkysys.pos.ui.category.AddCategoryFragment"
+        android:label="@string/add_category"
+        tools:layout="@layout/fragment_add_category">
+        <action
+            android:id="@+id/action_addCategoryFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+    </fragment>
+
+
+    <!--  Business info  -->
+    <fragment
+        android:id="@+id/businessDetailsFragment"
+        android:name="com.silkysys.pos.ui.business.BusinessDetailsFragment"
+        android:label="@string/business_information"
+        tools:layout="@layout/fragment_business_details">
+        <action
+            android:id="@+id/action_businessDetailsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+
+    <!--  User Details  -->
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="com.silkysys.pos.ui.user.UserDetailsFragment"
+        android:label="@string/user_information"
+        tools:layout="@layout/fragment_user_details">
+        <action
+            android:id="@+id/action_userDetailsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+
+    <!--  Scan invoice number  -->
+    <fragment
+        android:id="@+id/scanInvoiceNumberFragment"
+        android:name="com.silkysys.pos.ui.refund.ScanInvoiceNumberFragment"
+        android:label="@string/scan_invoice"
+        tools:layout="@layout/fragment_scan_invoice_number">
+        <action
+            android:id="@+id/action_scanInvoiceNumberFragment_to_refundFragment"
+            app:destination="@id/refundFragment" />
+    </fragment>
+
+    <!-- Global action to home -->
+    <action
+        android:id="@+id/action_global_homeFragment"
+        app:destination="@id/homeFragment" />
+
+
+    <!--  Choose a contact  -->
+    <fragment
+        android:id="@+id/chooseContactFragment"
+        android:name="com.silkysys.pos.ui.contact.ChooseContactFragment"
+        android:label="@string/choose_contact"
+        tools:layout="@layout/fragment_choose_contact">
+        <action
+            android:id="@+id/action_chooseContactFragment_to_cartFragment"
+            app:destination="@id/cartFragment"
+            app:popUpTo="@+id/chooseContactFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_chooseContactFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+
+
+</navigation>

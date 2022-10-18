@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_custom">#99FFFFFF</color>
+    <color name="welcome_text_color">#828081</color>
+    <color name="blue">#448EF6</color>
+    <color name="red">#C11E1E</color>
+    <color name="green">#21AF8E</color>
+
+
+    <!-- Primary & Secondary -->
+    <color name="primary_color">#00204A</color>
+    <color name="secondary_color">#FDB44B</color>
+
+
+    <color name="description_color">#ABABAC</color>
+    <color name="edittext_hint_color">#888888</color>
+    <color name="profile_background">#f7f7f7</color>
+    <color name="background_text">#0D000000</color>
+    <color name="cart_item_background">#F4F4F4</color>
+    <color name="header">#2E4765</color>
+    <color name="price">#707070</color>
+    <color name="discount_icon">#2e4765</color>
+    <color name="background_login">#051429</color>
+    <color name="border_edittext">#80ABB6C3</color>
+    <color name="frame_view">#afb8c5</color>
+    <color name="text_color">#5400204A</color>
+    <color name="secondary_returned">#005792</color>
+
+</resources>

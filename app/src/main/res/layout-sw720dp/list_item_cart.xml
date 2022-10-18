@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/cart_item_background"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <!-- Product name -->
+            <TextView
+                android:id="@+id/tv_product"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/header"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.45"
+                tools:text="COCONUT oil 350 ml offer" />
+
+            <!-- Sub quantity -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sub_quantity"
+                style="@style/QuantityButton"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="64dp"
+                android:backgroundTint="@color/white"
+                app:icon="@drawable/btn_sub"
+                app:iconTint="@color/primary_color"
+                app:layout_constraintBottom_toBottomOf="@id/tv_product"
+                app:layout_constraintStart_toEndOf="@+id/tv_product"
+                app:layout_constraintTop_toTopOf="@id/tv_product"
+                app:layout_constraintWidth_percent="0.03" />
+
+            <!-- Add quantity -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_quantity"
+                style="@style/QuantityButton"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="@color/white"
+                app:icon="@drawable/btn_plus"
+                app:iconTint="@color/primary_color"
+                app:layout_constraintBottom_toBottomOf="@id/tv_product"
+                app:layout_constraintStart_toEndOf="@+id/tv_quantity"
+                app:layout_constraintTop_toTopOf="@id/tv_product"
+                app:layout_constraintWidth_percent="0.03" />
+
+            <!-- Quantity -->
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
+                android:maxLength="2"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/primary_color"
+                app:layout_constraintBottom_toBottomOf="@+id/sub_quantity"
+                app:layout_constraintStart_toEndOf="@+id/sub_quantity"
+                app:layout_constraintTop_toTopOf="@+id/sub_quantity"
+                app:layout_constraintWidth_percent="0.05"
+                tools:ignore="HardcodedText"
+                tools:text="1" />
+
+            <!-- Unit price -->
+            <TextView
+                android:id="@+id/tv_unit_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:textColor="@color/price"
+                app:layout_constraintBottom_toBottomOf="@+id/add_quantity"
+                app:layout_constraintStart_toEndOf="@+id/add_quantity"
+                app:layout_constraintTop_toTopOf="@+id/add_quantity"
+                app:layout_constraintWidth_percent="0.12"
+                tools:text="00.00 SR" />
+
+            <!-- Total -->
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:gravity="end"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_unit_price"
+                app:layout_constraintStart_toEndOf="@+id/tv_unit_price"
+                app:layout_constraintTop_toTopOf="@+id/tv_unit_price"
+                app:layout_constraintWidth_percent="0.05"
+                tools:text="100.8" />
+
+            <!-- SAR label -->
+            <TextView
+                android:id="@+id/label_sar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:gravity="start"
+                android:text="@string/sr"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_unit_price"
+                app:layout_constraintStart_toEndOf="@+id/tv_total"
+                app:layout_constraintTop_toTopOf="@+id/tv_unit_price"
+                app:layout_constraintWidth_percent="0.05" />
+
+            <!-- Delete button -->
+            <ImageButton
+                android:id="@+id/iv_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/cd_delete_item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/label_sar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.05"
+                app:srcCompat="@drawable/ic_baseline_delete" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
