@@ -72,5 +72,8 @@ This POS system provides you a great replacement for a cash register and track s
 https://play.google.com/store/apps/details?id=com.silkysys.pos
 
 ## YoutubeLink
+
+<img src="images/POS.png" width="220" >
+
 https://youtu.be/pytSVlyvR64
 
